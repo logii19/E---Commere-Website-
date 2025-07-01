@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Shop</title>
+    
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <!--my css-->
+    <link rel="stylesheet" href="style.css">
+     
+    <!--font awesome Icons-->
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
+    
+</head>
+<body>
+    <!--navbar-->
+    <nav class="navbar">
+    <h1 >Shopping</h1>
+    <form id="search">
+        <input type="text" class="search" id="Search" placeholder="Search......">
+    </form>
+    
+        <div class="navbar-links">
+            <p class="navbar-link"><a href="#home">Home</a></p>
+            <p class="navbar-link"><a href="#about">About</a></p>
+            <p class="navbar-link"><a href="#Product">Product</a></p>
+            <p class="navbar-link"><a href="#Contact-us">Contact-us</a></p>
+            <i class="fa-solid fa-user"></i>
+            <i class="fa-solid fa-heart" style="text-align: center;"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+            
+            
+        </div>
+        <div class="navbar-menu-toggle" onclick="showNavbar()">
+            
+                <i class="fa-sharp fa-solid fa-bars"></i>
+                
+        </div>
+    </nav>
+
+    <!--side Navbar-->
+    <div class="side-navbar">
+       
+        <p style="text-align: right;" onclick="closeNavbar()">
+            <i class="fa-solid fa-rectangle-xmark"></i>
+
+        </p>
+        <div class=" side-navbar-links" >
+            <form id="search">
+                <input type="text" class="search" id="Search" placeholder="Search......">
+            </form>
+            <p class="side-navbar-link"><a href="#home">Home</a></p>
+            <p class="side-navbar-link"><a href="#about">About</a></p>
+            
+            <p class="side-navbar-link"><a href="#product">product</p>
+            <p class="side-navbar-link"><a href="#Contact">Contact</a></p>
+        </div>
+        
+    </div>
+
+    <!--Header-->
+
+    <div class="header">
+        <div>
+            <h1>Level up your style</h1>
+            <p>With our stunning collections</p>
+            <a href="#product">
+            <button class="header-button">Shop Now</button>
+            </a>
+        </div>
+        <div>
+         
+         <img class="header-image"src="img/logi.jpeg.jpg"width=200px>    
+        </div>
+    </div>
+    <!--Service-->
+    <div class="service">
+        <div class="service-container-1">
+            <div>
+                <h2 style="color: blueviolet;">We Provide Best</h2>
+                <h2 style="color: blueviolet;">Customer Experience</h2>
+            </div>
+            
+            <div>
+                <p style="color:brown;">|| we ensure that our customer have the bes shopping</p>
+            </div>
+        </div>
+        <div class="service-container-2">
+            <div>
+                <i class="fa-regular fa-face-smile"></i>
+                <h4>Satisfaction Guaranter</h4>
+                <p>We have complete confidence in the quality of our products and firmly believe that you will be more than delighted with your purchase.  </p>
+            </div>
+            <div>
+                <i class="fa-regular fa-face-smile-wink"></i>
+                <h4>New Arival Everyday</h4>
+                <p >Newly arrived Indian wear for weddings boasts of vibrant colors and modern designs. Women can choose the latest lehengas, sarees, shararas and gowns, while there are regal choices for men and children. </p>
+
+            </div>
+            <div>
+                <i class="fa-regular fa-face-grin-stars"></i>
+                <h4>Fast & Freeshipping</h4>
+                <p>Offering free, fast shipping is like magic for significantly boosting eCommerce sales</p>
+            </div>
+
+        </div>
+    </div>
+     <!--About Section-->
+     <section class="about" id="about">
+        <h1 class="heading"><span>About</span>us</h1>
+
+        <div class="row">
+                <div class="vedio-container">
+                <video  width="500px"  src="img/evideo.mp4" loop  autoplay muted></video>
+                <h1>Best Collections</h1>
+            </div>
+            <h2>Why we choose uS ?</h2>
+            <div class="content">
+                
+                <p>Have you ever noticed how a certain outfit can make you feel like you’re on top of the world, while another one leaves you feeling completely blah? Well, it turns out that theres more to clothing than just fabric and style. </p>
+                <p> get ready to discover the secrets behind the power of dressing and unlock a whole new level of confidence and positivity in your everyday life!</p>
+               <button class="header-button">learn more</button>
+            </div>
+
+        </div>
+
+     </section>
+     <br>
+     <br>
+     <br>
+     <br>
+     
+     <!--Collections Section-->
+     <section class="product" id="product">
+        <h1 class="heading">Latest<span>Product</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <span class="Discount">-20%</span>
+                <div class="image">
+                    <img src="img/image1.jpg">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                    
+                        <a href="#" class="cart-btn">add to card</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+
+                </div>
+                <div class="content">
+                    <h3>Dress port</h3>
+                        <div class="price">₹2000<span>₹1500</span></div>>
+                </div>
+            </div>
+            <div class="box">
+                <span class="Discount">-20%</span>
+                <div class="image">
+                    <img src="img/image2.png">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">add to card</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+
+                </div>
+                <div class="content">
+                    <h3>Dress port</h3>
+                        <div class="price">₹1500<span>₹999</span></div>>
+                </div>
+            </div>
+            <div class="box">
+                <span class="Discount">-15%</span>
+                <div class="image">
+                    <img src="img/image3.png">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">add to card</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+
+                </div>
+                <div class="content">
+                    <h3>Dress port</h3>
+                        <div class="price">₹850<span>₹650</span></div>>
+                </div>
+            </div>
+            <div class="box">
+                <span class="Discount">-15%</span>
+                <div class="image">
+                    <img src="img/image4.png">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">add to card</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+
+                </div>
+                <div class="content">
+                    <h3>Dress port</h3>
+                        <div class="price">₹550<span>₹450</span></div>>
+                </div>
+            </div>
+            <div class="box">
+                <span class="Discount">-30%</span>
+                <div class="image">
+                    <img src="img/image5.png">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">add to card</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+
+                </div>
+                <div class="content">
+                    <h3>Dress port</h3>
+                        <div class="price">₹2500<span>₹1999</span></div>>
+                </div>
+            </div>
+            <div class="box">
+                <span class="Discount">-25%</span>
+                <div class="image">
+                    <img src="img/image6.png">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="car -btn">add to card</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+
+                </div>
+                <div class="content">
+                    <h3>Dress port</h3>
+                        <div class="price">₹499<span>₹399</span></div>>
+                </div>
+            </div>
+            <div class="box">
+                <span class="Discount">-10%</span>
+                <div class="image">
+                    <img src="img/kids_img3.jpg">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">add to card</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+
+                </div>
+                <div class="content">
+                    <h3>Dress port</h3>
+                        <div class="price">₹350<span>₹299</span></div>>
+                </div>
+            </div>
+            <div class="box">
+                <span class="Discount">-5%</span>
+                <div class="image">
+                    <img src="img/kids_img1.jpg">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">add to card</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+
+                </div>
+                <div class="content">
+                    <h3>Dress port</h3>
+                        <div class="price">₹650<span>₹599</span></div>>
+                </div>
+            </div>
+            <div class="box">
+                <span class="Discount">-5%</span>
+                <div class="image">
+                    <img src="img/kids_img2.jpg">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">add to card</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+
+                </div>
+                <div class="content">
+                    <h3>Dress port</h3>
+                        <div class="price">₹750<span>₹699</span></div>>
+                </div>
+            </div>
+            <div class="box">
+                <span class="Discount">-10%</span>
+                <div class="image">
+                    <img src="img/kids_img4.jpg">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">add to card</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+
+                </div>
+                <div class="content">
+                    <h3>Dress port</h3>
+                        <div class="price">₹599<span>₹499</span></div>>
+                </div>
+            </div>
+            <div class="box">
+                <span class="Discount">-25%</span>
+                <div class="image">
+                    <img src="img/kids_img5.jpg">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">add to card</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+
+                </div>
+                <div class="content">
+                    <h3>Dress port</h3>
+                        <div class="price">₹799<span>₹599</span></div>>
+                </div>
+            </div>
+            <div class="box">
+                <span class="Discount">-10%</span>
+                <div class="image">
+                    <img src="img/kids_img6.jpg">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">add to card</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+
+                </div>
+                <div class="content">
+                    <h3>Dress port</h3>
+                        <div class="price">₹850<span>₹749</span></div>>
+                </div>
+            </div>
+            <div class="box">
+                <span class="Discount">-5%</span>
+                <div class="image">
+                    <img src="img/Mens_img1.webp">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">add to card</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+
+                </div>
+                <div class="content">
+                    <h3>Dress port</h3>
+                        <div class="price">₹500<span>₹450</span></div>>
+                </div>
+            </div>
+            <div class="box">
+                <span class="Discount">-5%</span>
+                <div class="image">
+                    <img src="img/Mens_img2.jpeg">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">add to card</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+
+                </div>
+                <div class="content">
+                    <h3>Dress port</h3>
+                        <div class="price">₹799<span>₹699</span></div>>
+                </div>
+            </div>
+        </div>
+
+     </section>
+     <!--contact secton-->
+     <section class="Contact-us" id="Contact-us">
+        <h1 class="heading"><span>Contact</span>us</h1>
+        <div class-="rae">
+            <div class="contact-wrapper">
+                <div class="contact-form">
+                    <h3>Sent us a message</h3>
+                    <form>
+                        <div class="form-group">
+                        <input id="info" type="text" name="name"placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <input id="info"  type="email" name="email"placeholder="Your Email">
+                        </div>
+                        <div class="form-group">
+                            <input id="info"  type="message" name="message"placeholder="Your Message">
+                        </div>
+                        <button class="header-button" type="submit">Sent Message</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                 <h3>Contact Information</h3>
+                 <p><i class="fas fa-phone"></i>+91 6380576103</p>
+                 <p><i class="fas fa-envelope"></i>saraswathylogii@gmail.com</p>
+                 <p><i class="fas fa-map-marker-alt"></i>No:12/25 VOC Street Tindivanam,Villupuram Tamilnadu</p>
+                </div>
+            </div>    
+        </div>
+            
+            <br>
+            <br>
+            <div class="img">
+                <img src="img/contact img.webp"  width="500px">
+            </div>
+        </div>
+     </section>
+
+    <script type="text/javascript" src="response.js"></script>
+</body>
+</html>
